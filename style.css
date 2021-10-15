@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    padding: 1em;
+    background-color: aqua;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+nav {
+    background-color: cadetblue;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+main section {
+    background-color: darkseagreen;
+    min-width: min-content;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+main section h2 {
+    text-align: center;
+}
+
+main section .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main section article {
+    width: 20vw;
+    padding: 1em;
+    background-color: brown;
+    border-radius: 2%;
+    margin: 1em;
+    margin-bottom: 1em;
+}
+main section article h3{
+    text-align: center;
+    color: wheat;
+}
+
+main section article input {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.result {
+    margin: 0 auto;
+    min-height: 1em;
+    height: auto;
+    width: 90%;
+    background-color: lightgoldenrodyellow;
+    margin-top: 1em;
+}
