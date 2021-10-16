@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Pocket Math</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -25,30 +27,38 @@
     </nav>
     <main>
         <section>
-            <h2>Section</h2>
+            <h2>Pre Algerbra</h2>
             <div class="articles">
-                <article>
-                    <h3>Title</h3>
-                    <input type="text">
-                    <input type="text">
+                <article id="arithmetic_mean" onchange="arithmetic_mean()">
+                    <h3>Arithmetic Mean</h3>
+                    <input type="text" placeholder="sum of values">
+                    <input type="text" placeholder="num of values">
+                    <span>
+                        <input type="checkbox" id="arithmetic">
+                        <label for="arithmetic">Arithmetic</label>
+                    </span>
+
                     <div class="result"></div>
                 </article>
-                <article>
-                    <h3>Title</h3>
-                    <input type="text">
-                    <input type="text">
+                <article id="probability" onchange="probability()">
+                    <h3>Probability</h3>
+                    <input type="text" placeholder="target outcomes">
+                    <input type="text" placeholder="total outcomes">
                     <div class="result"></div>
                 </article>
-                <article>
-                    <h3>Title</h3>
-                    <input type="text">
-                    <input type="text">
+                <article id="quadratic_formula" onchange="quadratic_formula()">
+                    <h3>Quadratic Formula</h3>
+                    <input type="a">
+                    <input type="b">
+                    <input type="c">
                     <div class="result"></div>
                 </article>
             </div>
-            
+
         </section>
     </main>
+    <script src="pre_algebra.js"></script>
 
 </body>
+
 </html>
