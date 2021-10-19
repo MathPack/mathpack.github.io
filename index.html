@@ -12,7 +12,7 @@
 <body>
     <header>
         <div>
-            <h1>Pocket Math</h1>
+            <h1>MathPack</h1>
         </div>
     </header>
     <nav>
@@ -48,16 +48,84 @@
                 </article>
                 <article id="quadratic_formula" onchange="quadratic_formula()">
                     <h3>Quadratic Formula</h3>
-                    <input type="a">
-                    <input type="b">
-                    <input type="c">
+                    <input type="text" placeholder="a">
+                    <input type="text" placeholder="b">
+                    <input type="text" placeholder="c">
                     <div class="result"></div>
                 </article>
             </div>
 
         </section>
+        <section>
+            <h2>Intermediate Algerbra</h2>
+            <div class="articles">
+                <article id="quadratic_distance" onchange="quadratic_distance()">
+                    <h3>Quadratic Distance</h3>
+                    <div><input type="text" placeholder="x1"><input type="text" placeholder="y1"></div>
+                    <div><input type="text" placeholder="x2"><input type="text" placeholder="x2"></div>
+                    <div class="result"></div>
+                </article>
+                <article id="slope_formula" onchange="slope_formula()">
+                    <h3>Slope Formula</h3>
+                    <div><input type="text" placeholder="x1"><input type="text" placeholder="y1"></div>
+                    <div><input type="text" placeholder="x2"><input type="text" placeholder="x2"></div>
+                    <div class="result"></div>
+                </article>
+                <article id="slope_intercept" onchange="slope_intercept()">
+                    <h3>Slope Intercept</h3>
+                    <input type="text" placeholder="slope">
+                    <input type="text" placeholder="x">
+                    <input type="text" placeholder="y">
+                    <div class="result"></div>
+                </article>
+                <article id="midpoint_formula" onchange="midpoint_formula()">
+                    <h3>Midpoint Formula</h3>
+                    <div><input type="text" placeholder="x1"><input type="text" placeholder="y1"></div>
+                    <div><input type="text" placeholder="x2"><input type="text" placeholder="x2"></div>
+                    <div class="result"></div>
+                </article>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Plane Geometry</h2>
+            <div class="articles">
+                <article id="area_of_triangle" onchange="area_of_triangle()">
+                    <h3>Area of Triangle</h3>
+                    <input type="text" placeholder="base">
+                    <input type="text" placeholder="height">
+                    <div class="result"></div>
+                </article>
+                <article id="pythagorean_theorem" onchange="pythagorean_theorem()">
+                    <h3>Pythagorean Theorem</h3>
+                    <input type="text" placeholder="a">
+                    <input type="text" placeholder="b">
+                    <input type="text" placeholder="c">
+                    <div class="result"></div>
+                </article>
+                <article id="slope_intercept" onchange="slope_intercept()">
+                    <h3>Slope Intercept</h3>
+                    <input type="text" placeholder="slope">
+                    <input type="text" placeholder="x">
+                    <input type="text" placeholder="y">
+                    <div class="result"></div>
+                </article>
+                <article id="midpoint_formula" onchange="midpoint_formula()">
+                    <h3>Midpoint Formula</h3>
+                    <div><input type="text" placeholder="x1"><input type="text" placeholder="y1"></div>
+                    <div><input type="text" placeholder="x2"><input type="text" placeholder="x2"></div>
+                    <div class="result"></div>
+                </article>
+            </div>
+
+        </section>
+
+        
     </main>
     <script src="pre_algebra.js"></script>
+    <script src="intermediate_algebra.js"></script>
+    <script src="plane_geometry.js"></script>
 
 </body>
 

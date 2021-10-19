@@ -83,6 +83,7 @@ main section article input {
     width: 90%;
     background-color: lightgoldenrodyellow;
     margin-top: 1em;
+    display: block !important;
 }
 
 /* Pre Algebra */
@@ -95,4 +96,8 @@ main section article input {
     margin: 0 auto;
     color: wheat;
 
+}
+
+#quadratic_distance div, #slope_formula div, #midpoint_formula div{
+    display: flex;
 }
