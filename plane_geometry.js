@@ -91,24 +91,22 @@ function box_plot() {
             min = f_arr[i]
             break;
         } else {
-            outliers.push[i]
+            outliers.push(f_arr[i])
         }
     }
 
     for (i = 0; i < n; i++) {
         console.log(f_arr[n-1-i], range[1])
-        if (f_arr[i] <= range[0]) {
+        if (f_arr[n-1-i] <= range[1]) {
             max = f_arr[n-1-i]
             break;
         } else {
-            outliers.push[n-1-i]
+            
+            console.log(outliers.push(f_arr[n-1-i]))
         }
     }
 
-    if (outliers.length == 0){
-        outliers = "none"
-    }
-
+   
     console.log(f_arr)
 
     parent.children[2].innerHTML = "q2/median = " + q2
