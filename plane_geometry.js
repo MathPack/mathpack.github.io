@@ -97,7 +97,7 @@ function box_plot() {
 
     for (i = 0; i < n; i++) {
         console.log(f_arr[n-1-i], range[1])
-        if (f_arr[i] >= range[0]) {
+        if (f_arr[i] <= range[0]) {
             max = f_arr[n-1-i]
             break;
         } else {
