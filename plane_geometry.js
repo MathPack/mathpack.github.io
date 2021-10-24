@@ -121,3 +121,60 @@ function box_plot() {
 
 
 }
+
+
+function area_of_rectangle(){
+    var parent = document.getElementById("area_of_rectangle")
+
+    let length = parseFloat(parent.children[1].value)
+    let width = parseFloat(parent.children[2].value)
+
+    const result = length * width
+
+    if(!(isNaN(length) || isNaN(width)))
+    {
+        parent.children[3].innerHTML = result
+    }
+}
+
+function area_of_parallelogram(){
+    var parent = document.getElementById("area_of_parallelogram")
+
+    let base = parseFloat(parent.children[1].value)
+    let height = parseFloat(parent.children[2].value)
+
+    const result = base * height
+
+    if(!(isNaN(base) || isNaN(height))){
+        parent.children[3].innerHTML = result
+    }
+
+}
+
+
+function area_of_circle(){
+    var parent = document.getElementById("area_of_circle")
+
+    let radius = parseFloat(parent.children[1].value)
+
+    let result = (radius ** 2) * Math.PI
+
+    if(!isNaN(radius)){
+        parent.children[2].innerHTML = result
+    }
+
+
+}
+
+
+function circumference_of_circle(){
+    var parent = document.getElementById("circumference_of_circle")
+
+    let radius = parseFloat(parent.children[1].value)
+
+    let result = 2 * Math.PI * radius
+
+    if(!isNaN(radius)){
+        parent.children[2].innerHTML = result
+    }
+}
