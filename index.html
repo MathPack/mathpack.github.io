@@ -15,7 +15,7 @@
             <h1>MathPack</h1>
         </div>
     </header>
-    <nav>
+    <!-- <nav>
         <div>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -24,7 +24,7 @@
                 <li><a href="#">Donate</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <main>
         <section>
             <h2>Pre Algerbra</h2>
@@ -133,6 +133,31 @@
         </section>
 
         <section>
+            <h2>Trigonometry</h2>
+            <div class="articles">
+                <article id="sine" onchange="sine()">
+                    <h3>Sine</h3>
+                    <input type="text" placeholder="opposite">
+                    <input type="text" placeholder="hypotenuse">
+                    <div class="result"></div>
+                </article>
+                <article id="cosine" onchange="cosine()">
+                    <h3>Cosine</h3>
+                    <input type="text" placeholder="adjacent">
+                    <input type="text" placeholder="hypotenuse">
+                    <div class="result"></div>
+                </article> 
+                <article id="tangent" onchange="tangent()">
+                    <h3>Tangent</h3>
+                    <input type="text" placeholder="opposite">
+                    <input type="text" placeholder="adjacent">
+                    <div class="result"></div>
+                </article>
+            </div>
+
+        </section>
+
+        <section>
             <h2>Box plot</h2>
             <div class="articles">
                 <article id="box_plot" onchange="box_plot()">
@@ -149,6 +174,8 @@
     <script src="pre_algebra.js"></script>
     <script src="intermediate_algebra.js"></script>
     <script src="plane_geometry.js"></script>
+    <script src="trigonometry.js"></script>
+
 
 </body>
 

@@ -74,12 +74,15 @@ main section article input {
     display: block;
     margin: 0 auto;
     width: 90%;
+    word-wrap: break-word;
+    
 }
 
 .result {
     margin: 0 auto;
     min-height: 1em;
     height: auto;
+    word-wrap: break-word;
     width: 90%;
     background-color: lightgoldenrodyellow;
     margin-top: 1em;
@@ -100,4 +103,48 @@ main section article input {
 
 #quadratic_distance div, #slope_formula div, #midpoint_formula div{
     display: flex;
+}
+
+@media (max-width: 800px) {
+    
+    nav {
+        font-size: 0.9em;
+    }
+    
+    .articles article{
+        width: 25%;
+        margin: 0.3em;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        font-size: 0.85em;
+    }
+    section{
+        max-width: 95vw !important;
+    }
+    .articles article{
+        width: 40%;
+        margin: 0.3em;
+    }
+}
+@media (max-width: 450px) {
+    nav {
+        font-size: 0.78em;
+    }
+    .articles article{
+        width: 50%;
+    }
+}
+
+@media (max-width: 380px) {
+    .articles article{
+        width: 65%;
+    }
+}
+
+@media (max-width: 220px) {
+    .articles article{
+        width: 80%;
+    }
 }
