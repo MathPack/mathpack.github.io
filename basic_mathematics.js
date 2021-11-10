@@ -70,6 +70,54 @@ function fractions_division(){
     }
 }
 
+function fraction_to_decimal(){
+    var parent = document.getElementById("fraction_to_decimal")
+    var a = parent.children[1].value.split("/")
+    parent.children[2].innerHTML = a[0]/a[1]
+}
+
+function decimal_to_fraction(){
+    var parent = document.getElementById("decimal_to_fraction")
+    let a = parent.children[1].value
+    let fraction = a.split(".")
+    let length = fraction[1].length
+    let result = [parseInt(a * 10 ** length),10 ** length]
+    let gcd = GCD(result[0], result[1])
+    result[0] /= gcd
+    result[1] /= gcd
+    parent.children[2].innerHTML = result.join("/")
+}
+
+function decimal_to_percent(){
+    var parent = document.getElementById("decimal_to_percent")
+    let decimal = parent.children[1].value
+
+    parent.children[2].innerHTML = decimal * 100 + "%"
+}
+
+function percent_to_decimal(){
+    var parent = document.getElementById("percent_to_decimal")
+    let percent = parent.children[1].value
+
+    parent.children[2].innerHTML = percent / 100
+}
+
+function ratio_distribution(){
+    var parent = document.getElementById("ratio_distribution")
+    var total = parent.children[1].value
+    var ratio = parent.children[2].value.split(":")
+    var rtotal = 0
+    for(i = 0; i < ratio.length; i++){
+        rtotal += parseInt(ratio[i])
+    }
+    var x = total/rtotal
+    var result = ratio
+    for(i = 0; i < result.length; i++){
+        result[i] = result[i] * x
+    }
+    parent.children[3].innerHTML = result.join(":")
+}
+
 function LCD(a,b){
     let final = a*b
     let result = 0
