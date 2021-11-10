@@ -69,6 +69,15 @@ function fractions_division(){
         parent.children[3].innerHTML = result.join("/")
     }
 }
+function simplify_fraction(){
+    var parent = document.getElementById("simplify_fraction")
+    let result = parent.children[1].value.split("/")
+    let gcd = GCD(parseInt(result[0]), parseInt(result[1]))
+    console.log(gcd)
+    result[0] /= gcd
+    result[1] /= gcd
+    parent.children[2].innerHTML = result.join("/")
+}
 
 function fraction_to_decimal(){
     var parent = document.getElementById("fraction_to_decimal")
@@ -115,7 +124,7 @@ function ratio_distribution(){
     for(i = 0; i < result.length; i++){
         result[i] = result[i] * x
     }
-    parent.children[3].innerHTML = result.join(":")
+    parent.children[3].innerHTML = result.join(" : ")
 }
 
 function LCD(a,b){
