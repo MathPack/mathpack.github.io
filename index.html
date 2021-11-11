@@ -126,8 +126,8 @@
                     <input type="text" placeholder="radius">
                     <div class="result"></div>
                 </article>
-               
-                
+
+
             </div>
 
         </section>
@@ -146,7 +146,7 @@
                     <input type="text" placeholder="adjacent">
                     <input type="text" placeholder="hypotenuse">
                     <div class="result"></div>
-                </article> 
+                </article>
                 <article id="tangent" onchange="tangent()">
                     <h3>Tangent</h3>
                     <input type="text" placeholder="opposite">
@@ -233,9 +233,9 @@
                     <input type="text" placeholder="ratio">
                     <div class="result"></div>
                 </article>
-               
 
-                
+
+
             </div>
 
         </section>
@@ -248,17 +248,22 @@
                     </div>
                     <input type="text" placeholder="rows" onchange="pictograph_maker()">
                 </article>
-                <div class="articles">
-                    <article id="box_plot" onchange="box_plot()">
-                        <h3>Box Plot</h3>
-                        <input type="text" placeholder="values, separate by comma(,)">
-                        <div class="result"></div>
-                    </article>
-                </div>
+                <article id="pie_graph_maker">
+                    <h3>Pie Graph Maker</h3>
+                    <div class="table">
+                    </div>
+                    <input type="text" placeholder="rows" onchange="table_maker()">
+                    <button id="pie_graph_maker_btn" onclick="pie_graph_maker()">Generate</button>
+                </article>
+                <article id="box_plot" onchange="box_plot()">
+                    <h3>Box Plot</h3>
+                    <input type="text" placeholder="values, separate by comma(,)">
+                    <div class="result"></div>
+                </article>
             </div>
 
         </section>
-        
+
     </main>
     <script src="pre_algebra.js"></script>
     <script src="intermediate_algebra.js"></script>
