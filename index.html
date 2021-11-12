@@ -255,11 +255,29 @@
                     <input type="text" placeholder="rows" onchange="table_maker()">
                     <button id="pie_graph_maker_btn" onclick="pie_graph_maker()">Generate</button>
                 </article>
+               
                 <article id="box_plot" onchange="box_plot()">
-                    <h3>Box Plot</h3>
+                    <h3>Box and Whiskers Plot</h3>
                     <input type="text" placeholder="values, separate by comma(,)">
                     <div class="result"></div>
                 </article>
+                <article id="mean_median_mode" onchange="mean_median_mode()">
+                    <h3>Mean Median Mode</h3>
+                    <input type="text" placeholder="values, separate by comma(,)">
+                    <div class="result"></div>
+                </article>
+            </div>
+
+        </section>
+        <section>
+            <h2>Introduction to Algebra</h2>
+            <div class="articles">
+                <article id="algebra_simplify" onchange="algebra_simplify()">
+                    <h3>Simplify Equations</h3>
+                    <input type="text" placeholder="equation">
+                    <div class="result"></div>
+                </article>
+               
             </div>
 
         </section>
@@ -271,6 +289,8 @@
     <script src="trigonometry.js"></script>
     <script src="basic_mathematics.js"></script>
     <script src="statistics_and_probability.js"></script>
+    <script src="https://unpkg.com/mathjs@9.5.1/lib/browser/math.js"></script>
+    <script src="introduction_to_algebra.js"></script>
 
 
 
